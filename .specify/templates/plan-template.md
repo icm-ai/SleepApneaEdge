@@ -31,7 +31,31 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+**Principle I - Simplicity First (Occam's Razor)**:
+- [ ] Architecture uses simplest approach meeting requirements
+- [ ] All dependencies justified (document in Technical Context)
+- [ ] Rejected alternatives documented with rationale
+
+**Principle II - Test-First Development**:
+- [ ] Test strategy defined before implementation
+- [ ] Accuracy tests verify ≥90% threshold
+- [ ] Edge device latency tests included
+
+**Principle III - Model Accuracy Requirement**:
+- [ ] Success criteria specify ≥90% accuracy target
+- [ ] Validation dataset identified and representative
+- [ ] Per-class metrics (precision, recall, F1) planned
+
+**Principle IV - Edge Performance Optimization**:
+- [ ] Target edge hardware specified in Technical Context
+- [ ] Latency targets defined (<100ms baseline, adjust as needed)
+- [ ] Model size constraints documented
+- [ ] Profiling plan on target hardware established
+
+**Principle V - Observability & Reproducibility**:
+- [ ] Training metadata tracking planned (hyperparameters, seeds, versions)
+- [ ] Inference logging strategy defined
+- [ ] Model versioning approach documented
 
 ## Project Structure
 

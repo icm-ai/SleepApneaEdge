@@ -105,6 +105,9 @@
 <!--
   ACTION REQUIRED: Define measurable success criteria.
   These must be technology-agnostic and measurable.
+
+  FOR ML/AI FEATURES: Constitution requires ≥90% model accuracy on validation sets.
+  Include accuracy, per-class metrics, and edge performance criteria.
 -->
 
 ### Measurable Outcomes
@@ -113,3 +116,16 @@
 - **SC-002**: [Measurable metric, e.g., "System handles 1000 concurrent users without degradation"]
 - **SC-003**: [User satisfaction metric, e.g., "90% of users successfully complete primary task on first attempt"]
 - **SC-004**: [Business metric, e.g., "Reduce support tickets related to [X] by 50%"]
+
+### ML Model Success Criteria *(if applicable)*
+
+<!--
+  REQUIRED for features involving ML models per Constitution Principle III & IV
+-->
+
+- **SC-ML-001**: Model achieves ≥90% accuracy on held-out validation dataset
+- **SC-ML-002**: Per-class precision ≥[X]%, recall ≥[Y]%, F1 ≥[Z]% (address class imbalance)
+- **SC-ML-003**: False negative rate for critical events ≤[X]%
+- **SC-ML-004**: Inference latency on target edge device ≤[X]ms per prediction
+- **SC-ML-005**: Model accuracy degradation on edge vs training environment <2%
+- **SC-ML-006**: Model size fits within [X]MB memory constraint on target device
